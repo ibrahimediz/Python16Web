@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="846d7a6f-fdf7-4fab-b7ea-c126f5a88534" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1VyFLdSUFU4MsUz4Qnq8j7P7BKX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\İbrahim EDİZ\Web\static" />
+      <recent name="D:\İbrahim EDİZ\Web\templates" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="846d7a6f-fdf7-4fab-b7ea-c126f5a88534" name="Default Changelist" comment="" />
+      <created>1578217374643</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578217374643</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="391" y="199" key="com.intellij.ide.util.TipDialog" timestamp="1578217391351">
+      <screen x="0" y="0" width="1360" height="740" />
+    </state>
+    <state x="391" y="199" key="com.intellij.ide.util.TipDialog/0.0.1360.740@0.0.1360.740" timestamp="1578217391351" />
+    <state x="406" y="286" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1578217705084">
+      <screen x="0" y="0" width="1360" height="740" />
+    </state>
+    <state x="406" y="286" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1360.740@0.0.1360.740" timestamp="1578217705084" />
+  </component>
+</project>
