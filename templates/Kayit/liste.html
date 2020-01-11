@@ -1,13 +1,12 @@
-<html>
-<head>
-</head>
-<body>
+{% extends "../base.html "%}
+	{% block baslik %}
 <H1> Bu benim Sayfam</h1>
+{% endblock %}
+{% block content %}
 {% for kayit in kayitlar %}
 <h3>{{kayit.tcKimlikNo}}</h3>
 <p>{{kayit.adi}}</p>
 <p>{{kayit.soyadi}}</p>
 <p>{{kayit.eposta}}</p>
 {% endfor %}
-</body>
-</html>
+{% endblock %}

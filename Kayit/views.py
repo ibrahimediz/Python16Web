@@ -3,4 +3,4 @@ from .models import KayitModel
 
 def kayitListele(request):
     kayitlar = KayitModel.objects.all()
-    return render(request,"index.html",{"kayitlar":kayitlar})
+    return render(request,"Kayit/liste.html",{"kayitlar":kayitlar})
