@@ -3,5 +3,7 @@ from . import views
 
 urlpatterns = [
     path('',views.kayitListele,name="kayitList"),
-    path('<int:tcKimlikNo>',views.kayitdetay,name="kayitdetay")
+    path('<int:pk>',views.kayitdetay2,name="kayitdetay2"),
+    path('tc/<int:tcKimlikNo>',views.kayitdetay,name="detayTC"),
+    path('yeni',views.kayitYeni,name="kayityeni"),
 ]

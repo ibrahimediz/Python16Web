@@ -3,12 +3,14 @@
 <H1> Bu benim Sayfam</h1>
 {% endblock %}
 {% block content %}
+<a href="{% url 'kayityeni' %}">Yeni Kayit</a>
 {% for kayit in kayitlar %}
-<a href="{% url 'kayitdetay' tcKimlikNo=kayit.tcKimlikNo %}">
+<a href="{% url 'detayTC' tcKimlikNo=kayit.tcKimlikNo %}">
 <h3>{{kayit.tcKimlikNo}}</h3>
 </a>
 <p>{{kayit.adi}}</p>
 <p>{{kayit.soyadi}}</p>
 <p>{{kayit.eposta}}</p>
 {% endfor %}
+
 {% endblock %}
