@@ -1,0 +1,28 @@
+- cd /d "d:Ýbrahim EDÝZ\BenimWeb"
+1 django-admin startproject Sitem .
+2 python manage.py migrate
+3 python manage.py createsuperuser
+4 VS code klasör açýlsýn.
+5 settings.py 
+	5a LANGUAGE_CODE = 'tr'
+	5b TIME_ZONE = 'Europe/Istanbul'
+	5c ALLOWED_HOSTS = ["127.0.0.1","localhost","www.ibrahimediz.com"]
+	5d klasör oluþtur "templates"
+	5e "templates =" bölümü 'DIRS': [os.path.join(BASE_DIR,'templates')],
+6 terminal penceresi
+	- python manage.py startapp Blog
+7 settings.py
+	7a "INSTALLED_APPS = "  kýsmýna 'Blog' eklenir
+8 Blog klasörü içindeki models.py dosyasý
+	- model oluþturulur
+9 terminal penceresi
+	- python manage.py makemigrations Blog
+	- python manage.py migrate
+10 Blog klasörü içindeki admin.py dosyasý
+	- from .models import Gonderi
+	- admin.site.register(Gonderi)
+11 terminal penceresi
+	- python manage.py runserver
+12 Web Tarayýcýsý
+	-127.0.0.1:8000/admin
+
