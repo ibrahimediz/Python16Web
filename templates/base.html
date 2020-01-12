@@ -20,13 +20,19 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1><a href="index.html">Transit</a></h1>
+				<h1><a href="{%url 'anasayfa' %}">Vektorel Python 16</a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="{%url 'anasayfa' %}">Ana Sayfa</a></li>
 						<li><a href="{% url 'kayitList' %}">Kayıtlar</a></li>
-						<li><a href="elements.html">Elements</a></li>
-						<li><a href="#" class="button special">Sign Up</a></li>
+						{% if user.is_authenticated %}
+						<li>Merhaba {{user.username}}</li>
+						<li><a href="{% url 'logout' %}" class="button special">Çıkış</a></li>
+						{% else %}
+						<li><a href="{% url 'login' %}" class="button special">Giriş Yap</a></li>
+						
+						<li><a href="{% url 'signup' %}" class="button special">Kayıt Ol</a></li>
+						{% endif %}
 					</ul>
 				</nav>
 			</header>

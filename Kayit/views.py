@@ -25,3 +25,15 @@ def kayitYeni(request):
     else:
         form = KayitForm()
     return render(request,'Kayit/kayitedit.html',{"form":form})
+
+def kayitDuzenle(request,pk):
+    kayit = get_object_or_404(KayitModel,pk=pk)
+    if request.method == "POST":
+        form = KayitForm(request.POST,instance=kayit)
+        if form.is_valid():
+            kayit = form.save(commit=False)
+            kayit.save()
+            return redirect('kayitdetay2',pk=kayit.pk)
+    else:
+        form = KayitForm(instance=kayit)
+    return render(request,'Kayit/kayitedit.html',{"form":form})

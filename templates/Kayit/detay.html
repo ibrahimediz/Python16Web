@@ -2,8 +2,16 @@
 	{% block baslik %}
 <H1> Gonderi Detay</h1>
 {% endblock %}
-{% block content %}
 
+{% block content %}
+{% if user.is_authenticated %}
+	{% if user.is_superuser %}
+
+	<a href="{% url 'kayitduzenle' pk=kayit.pk %}">
+	Düzenle
+	</a>
+{% endif %}
+{% endif %}
 <h3>{{kayit.tcKimlikNo}}</h3>
 <p>{{kayit.adi}}</p>
 <p>{{kayit.soyadi}}</p>

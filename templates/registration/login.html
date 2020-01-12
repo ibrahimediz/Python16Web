@@ -1,11 +1,11 @@
 {% extends "../base.html "%}
 	{% block baslik %}
-<H1> Yeni Kayit</h1>
+<H1> Giriş Yapılıyor</h1>
 {% endblock %}
 {% block content %}
 <form method="POST">
     {% csrf_token %}
     {{form.as_table}}
-    <button type="submit">Kaydet</button>
+    <button type="submit">Giriş Yap</button>
 </form>
 {% endblock %}
