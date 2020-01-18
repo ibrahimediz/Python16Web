@@ -3,5 +3,5 @@ from Kayit.models import KayitModel
 
 class KayitSerializer(serializers.ModelSerializer):
     class Meta:
-        fields = ("tcKimlikNo","adi","soyadi","cinsiyet","telefon","eposta")
+        fields = ("id","tcKimlikNo","adi","soyadi","cinsiyet","telefon","eposta")
         model = KayitModel
